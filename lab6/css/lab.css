@@ -1,0 +1,13 @@
+div.ten h2 {
+  font-family:cursive;
+}
+ div.ten p {
+  color:green;
+ }
+
+div.ten p {
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  border-radius: 5px;
+}
