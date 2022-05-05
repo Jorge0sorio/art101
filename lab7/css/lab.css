@@ -1,0 +1,13 @@
+div.sevenone h2 {
+  font-family:cursive;
+}
+ div.sevenone p {
+  color:green;
+ }
+
+div.sevenone p {
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  border-radius: 5px;
+}
