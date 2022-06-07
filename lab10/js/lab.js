@@ -5,19 +5,14 @@
  * (c) Copyright by Blub Corp.
  **/
 
- //Attach an event listener to your button that does the following//
-  var button = document.getElementById('my-button');
-  button.addEventListener('click', function() {
- //Gets the value of your input field//
-      inputValue = document.getElementById('user-name').value;
-      console.log("inputValue", inputValue);
-
  //Runs that value through your sort() or anagram() function and saves the results.//
-      function retrieveUserName(){
-           //Step 4 of Task 2
-           console.log("inputValue", inputValue);
+      function anagram(){
+            //Gets the value of your input field//
+            //Runs that value through your sort() or anagram() function and saves the results.//
+           var userName = document.getElementById('user-name').value;
+           console.log("userName=",userName);
            //changed to an array
-           var usernameArray = inputValue.split('');s
+           var usernameArray = userName.split('');
            console.log("usernameArray=", usernameArray);
            //sorting the array
            var usernameArraySort = usernameArray.sort();
@@ -28,59 +23,12 @@
            //Step 5 of Task 2
            return sortedUsername;
       }
-      //Replaces the html in <div id=output> with the results.//
-      document.writeln("please print",
-           retrieveUserName(), "</br>");
-  });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- //Attach an event listener to your button that does the following//
-  var button = document.getElementById('my-button');
-  button.addEventListener('click', function retrieveUserName(){
-           //Step 4 of Task 2
-           inputValue = document.getElementById('my-input').value;
-           console.log("inputValue", inputValue);
-           //changed to an array
-           var usernameArray = inputValue.split('');s
-           console.log("usernameArray=", usernameArray);
-           //sorting the array
-           var usernameArraySort = usernameArray.sort();
-           console.log("usernameArraySort=", usernameArraySort);
-           //array turend back to string
-           var sortedUsername = usernameArraySort.join();
-           console.log("sortedUsername=", sortedUsername);
-           //Step 5 of Task 2
-           return sortedUsername;
-      }
-      //Replaces the html in <div id=output> with the results.//
-      document.writeln("please print",
-           retrieveUserName(), "</br>");
-  });
+      //Attach an event listener to your button that does the following//
+      var button = document.getElementById('button');
+      button.addEventListener('click', function() {
+          var anagramed = anagram();
+          blurb =  "<p>Here is your ananagramed- ananangram- Anagramed Name!:" + anagramed +"</p>";
+          //Replaces the html in <div id=output> with the results.
+          document.getElementById("output").innerHTML = blurb
+      });
