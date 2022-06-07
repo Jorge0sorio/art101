@@ -26,14 +26,17 @@
    style.color = "blue";
 
 
-var outputEl =
-  document.getElementById("ouput");
+var outputEle =
+  document.getElementById("input");
 
 var new2E1 =
-  document.createElement("h3");
+  document.createElement("h2");
 
-new2El.id = "misc";
+new2E1.id = "head";
 
-new2El.innerHTML = "Enter the matrix O_o";
+new2E1.innerHTML = "Enter the matrix 0_o";
 
-outputEl.appendChild(new2El);
+outputEle.appendChild(new2E1);
+
+document.getElementById("head").
+  style.color = "red";

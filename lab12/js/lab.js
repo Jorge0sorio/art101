@@ -17,16 +17,20 @@
 //Ravenclaw, Slytherin, and Hufflepuff depending on whether//
 //the value of mod is 0, 1, 2, or 3//
    if (mod == 0) {
-     return "Gryfindor"
+     return "Gryfindor";
+   } else if (mod == 1) {
+     return "Slytherin";
+   } else if (mod == 2) {
+     return "Raven Claw";
+   } else if (mod == 3) {
+     return "Huffle Puff";
    }
-   else if (mod == 1);{
-     return "Slytherin"
-   }
+}
 
- var myButton = document.getElementById('button')
- myButton.addEventListener("click",function(){
-   var name = document.getElementById("input").value;
+ var button = document.getElementById('button');
+ button.addEventListener('click', function() {
+   var name = document.getElementById('input').value;
    var house = sortingHat(name);
-   newText = "<p> The Sorting Hat has sorted you into " + house + "</p>";
-   document.getElementById("output").innerHTML = newText;
- })
+   speech =  "<p>The Sorting Hat has sorted you into " + house + " ... Welcome " + name + "</p>";
+   document.getElementById("output").innerHTML = speech
+ });
