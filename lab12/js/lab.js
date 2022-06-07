@@ -31,6 +31,6 @@
  button.addEventListener('click', function() {
    var name = document.getElementById('input').value;
    var house = sortingHat(name);
-   speech =  "<p>The Sorting Hat has sorted you into " + house + " ... Welcome " + name + "</p>";
-   document.getElementById("output").innerHTML = speech
+   prompt =  "<p>The Sorting Hat has sorted you into " + house + " ... Welcome " + name + "</p>";
+   document.getElementById("output").innerHTML = prompt
  });
