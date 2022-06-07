@@ -1,0 +1,15 @@
+div.tenone h2 {
+  font-family:cursive;
+  background-color: green;
+}
+
+ div.tenone p {
+  color:green;
+ }
+
+div.tenone p {
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  border-radius: 5px;
+}
